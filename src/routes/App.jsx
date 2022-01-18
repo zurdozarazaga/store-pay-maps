@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
+
 
 import Home from '../containers/Home';
 import Checkout from '../containers/Checkout';
@@ -17,14 +18,14 @@ const App = () => {
     <AppContext.Provider value={initialState}>
       <BrowserRouter>
         <Layout>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/checkout" component={Checkout} />
-            <Route exact path="/checkout/information" component={Information} />
-            <Route exact path="/checkout/payment" component={Payment} />
-            <Route exact path="/checkout/success" component={Success} />
-            <Route component={NotFound} />
-          </Switch>
+          <Routes>
+            <Route  path="/" element={<Home />} />
+            <Route  path="/checkout" element={<Checkout />} />
+            <Route  path="/checkout/information" element={<Information />} />
+            <Route  path="/checkout/payment" element={<Payment />} />
+            <Route  path="/checkout/success" element={<Success />} />
+            <Route element={<NotFound />} />
+          </Routes>
         </Layout>
       </BrowserRouter>
     </AppContext.Provider>
