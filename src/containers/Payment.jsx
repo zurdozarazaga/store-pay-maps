@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { PayPalButton } from 'react-paypal-button-v2';
 import { useNavigate } from 'react-router-dom';
 import AppContext from '../context/AppContext';
-import '../styles/components/Payment.css';
+// import '../styles/components/Payment.css';
 
 const Payment = () => {
   const { state, addNewOrder } = useContext(AppContext);
@@ -22,7 +22,7 @@ const Payment = () => {
   }
 
   const handlePaymentSuccess = (data) => {
-    console.log(data);
+    console.log('1. realiza el pago',data);
     if (data.status === 'COMPLETED') {
       const newOrder = {
         buyer,

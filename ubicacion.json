@@ -1,0 +1,55 @@
+{
+  "results" : [
+     {
+        "address_components" : [
+           {
+              "long_name" : "Avenida Hipólito Yrigoyen",
+              "short_name" : "Av. Hipólito Yrigoyen",
+              "types" : [ "route" ]
+           },
+           {
+              "long_name" : "Buenos Aires",
+              "short_name" : "CABA",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "Argentina",
+              "short_name" : "AR",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "Av. Hipólito Yrigoyen, Buenos Aires, Argentina",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : -34.6045258,
+                 "lng" : -58.3688379
+              },
+              "southwest" : {
+                 "lat" : -34.6193532,
+                 "lng" : -58.4294635
+              }
+           },
+           "location" : {
+              "lat" : -34.61080390000001,
+              "lng" : -58.39907230000001
+           },
+           "location_type" : "GEOMETRIC_CENTER",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : -34.6045258,
+                 "lng" : -58.3688379
+              },
+              "southwest" : {
+                 "lat" : -34.6193532,
+                 "lng" : -58.4294635
+              }
+           }
+        },
+        "partial_match" : true,
+        "place_id" : "ChIJ_-k4pejKvJURhaxX-iwc_2Q",
+        "types" : [ "route" ]
+     }
+  ],
+  "status" : "OK"
+}

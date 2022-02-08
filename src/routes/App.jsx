@@ -15,20 +15,21 @@ import useInitialState from '../hooks/useInitialState';
 const App = () => {
   const initialState = useInitialState();
   return (
-    <AppContext.Provider value={initialState}>
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route  path="/" element={<Home />} />
-            <Route  path="/checkout" element={<Checkout />} />
-            <Route  path="/checkout/information" element={<Information />} />
-            <Route  path="/checkout/payment" element={<Payment />} />
-            <Route  path="/checkout/success" element={<Success />} />
-            <Route element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </AppContext.Provider>
+    
+      <AppContext.Provider value={initialState}>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route  path="/" element={<Home />} />
+              <Route  path="/checkout" element={<Checkout />} />
+              <Route  path="/checkout/information" element={<Information />} />
+              <Route  path="/checkout/payment" element={<Payment />} />
+              <Route  path="/checkout/success" element={<Success />} />
+              <Route element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </AppContext.Provider>
   );
 }
 
