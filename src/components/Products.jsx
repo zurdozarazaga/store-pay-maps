@@ -12,8 +12,8 @@ const Products = () => {
   }
 
   return (
-    <div className="mt-2 justify-center">
-      <div className=" gap-1.5 gap-y-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+    <div className="mt-4 justify-center">
+      <div className=" gap-7 gap-y-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
         {products.map(product => (
           <Product key={product.id} product={product} handleAddToCart={handleAddToCart} />
         ))}

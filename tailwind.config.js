@@ -11,6 +11,9 @@ module.exports = {
         'navigation-end' : '#061011',
         'price': '#33b13a',
       },
+      fontFamily: {
+        'GreatVibes': ["Great Vibes", "cursive"],
+      }
     },
   },
   plugins: [],
