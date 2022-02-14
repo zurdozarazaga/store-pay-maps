@@ -20,7 +20,7 @@ const Product = ({ product, handleAddToCart }) => {
               </h2>
               <p className='font-light text-sm'>{product.description}</p>
             </div>
-            <button className='bg-gradient-to-r from-header-init to-header-end hover:bg-navigation-end cursor-pointer font-light rounded-md text-sm outline-none w-full p-2.5 ' type="button" onClick={handleAddToCart(product)}>Comprar</button>
+            <button className='bg-gradient-to-r from-header-init to-header-end hover:bg-navigation-end cursor-pointer font-light rounded-md text-sm outline-none w-full p-2.5 ' type="button" onClick={handleAddToCart(product)}>Agregar al Carrito</button>
           </div>
         </div>
       </div>
