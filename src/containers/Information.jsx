@@ -28,7 +28,7 @@ const Information = () => {
 
   return (
     <div className=" grid md:grid-cols-3 md:gap-2 md:gap-y-6 md:mb-16 ">
-      <div className="">
+      <div className="col-start-2 col-end-2 ">
         <div className="flex justify-center">
           <h2 className='mt-2 p-0'>Informacion de contacto:</h2>
         </div>
@@ -68,7 +68,7 @@ const Information = () => {
             </Link>
           </div>
           <div >
-            <button className=" mt-2.5 mr-3 p-2 shadow-inner bg-gradient-to-r from-header-init to-header-end inline-block rounded-md border-blue-500 cursor-pointe" type="button" onClick={handleSubmit}>Pagar</button>
+            <button className=" mt-2.5 mr-3 pt-2 pb-2 py-6 px-6  shadow-inner bg-green-700 inline-block rounded-md border-blue-500 cursor-pointe" type="button" onClick={handleSubmit}>Pagar</button>
           </div>
         </div>
       </div>

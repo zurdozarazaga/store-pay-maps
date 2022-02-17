@@ -41,12 +41,12 @@ const Payment = () => {
   }
 
   return (
-    <div className="Payment">
-      <div className="Payment-content">
-        <h3>Resument del pedido:</h3>
+    <div className="grid md:grid-cols-3 md:gap-8 md:gap-y-6">
+      <div className="md:col-start-2 md:col-end-3">
+        <h3 className="flex justify-center mb-4">Resumen del pedido:</h3>
         {cart.map((item) => (
-          <div className="Payment-item" key={item.title}>
-            <div className="Payment-element">
+          <div className="flex justify-between items-center mb-2" key={item.title}>
+            <div className="flex outline-none justify-between items-center w-full border-b border-solid border-gray-100">
               <h4>{item.title}</h4>
               <span>
                 $
@@ -56,7 +56,7 @@ const Payment = () => {
             </div>
           </div>
         ))}
-        <div className="Payment-button">
+        <div className="mt-4">
         <PayPalButton
             paypalOptions={paypalOtions}
             buttonStyles={buttonStyles}
