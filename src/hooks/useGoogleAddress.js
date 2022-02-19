@@ -3,12 +3,10 @@ import axios from 'axios';
 
 const getCoordinates = async (api) => {
   const response = await axios(api);
-  console.log('7. respuesta de api',response);
   return response
 }
 
 const useGoogleAddress = (address, city, province, country) => {
-  debugger;
   const [map, setMap] = useState({});
   // const [loadedMap, setLoadedMap] = useState({
   //   isLoaded: false,
@@ -16,19 +14,14 @@ const useGoogleAddress = (address, city, province, country) => {
   //   error: false,
   // });
 
-  console.log('4. objeto mapa antes del llamado',map);
-  console.log('5. direccion antes de api',address);
   const API = `https://maps.googleapis.com/maps/api/geocode/json?address=${address,province}&key=${process.env.GOOGLE_MAPS_API_KEY}`;
 
-  console.log('antes del efecto');
   // setLoadedMap({isLoaded: false, loading: true, error: false});
   useEffect( async () => {
-    console.log('dentro del efecto');
     const res = await getCoordinates(API);
     setMap(res.data.results[0].geometry.location);
     // setLoadedMap({...loadedMap,  isLoaded: true, loading: false, error: false});
   }, []);
-  console.log('6. objeto mapa',map);
   return {
     map
     
