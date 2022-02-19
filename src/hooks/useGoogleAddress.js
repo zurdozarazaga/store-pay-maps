@@ -18,8 +18,7 @@ const useGoogleAddress = (address, city, province, country) => {
 
   console.log('4. objeto mapa antes del llamado',map);
   console.log('5. direccion antes de api',address);
-  console.log('pocess.env',process.env.GOOGLE_MAPS_API_KEY);
-  const API = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${process.env.GOOGLE_MAPS_API_KEY}`;
+  const API = `https://maps.googleapis.com/maps/api/geocode/json?address=${address,province}&key=${process.env.GOOGLE_MAPS_API_KEY}`;
 
   console.log('antes del efecto');
   // setLoadedMap({isLoaded: false, loading: true, error: false});
